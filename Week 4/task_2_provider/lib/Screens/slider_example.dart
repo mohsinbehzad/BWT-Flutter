@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:task_2_provider/provider/slider_provider.dart';
 
 class SliderExample extends StatefulWidget {
   const SliderExample({super.key});
@@ -9,9 +10,11 @@ class SliderExample extends StatefulWidget {
 }
 
 class _SliderExampleState extends State<SliderExample> {
-  double value = 1;
+  // double value = 1;
   @override
   Widget build(BuildContext context) {
+    print('build');
+    final sliderProvider = Provider.of<SliderProvider>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
@@ -20,36 +23,37 @@ class _SliderExampleState extends State<SliderExample> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Slider(
-            min: 0,
-            max: 1,
-              value: value,
-              onChanged: (val) {
-                value = val;
-                setState(() {
-
+          Consumer<SliderProvider>(builder: (context, value, child) {
+            return Slider(
+                value: sliderProvider.value,
+                onChanged: (val) {
+                  sliderProvider.setValue(val);
                 });
-              }),
-          Row(
-            children: [
-              Expanded(
-                child: Container(
-                  height: 100,
-                  color: Colors.red.withOpacity(value),
-                  child: const Center(child: Text('Red')),
+          }),
+          Consumer<SliderProvider>(builder: (context, value, child) {
+            return Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    height: 100,
+                    color: Colors.red.withOpacity(sliderProvider.value),
+                    child: const Center(child: Text('Red')),
+                  ),
                 ),
-              ),
-              Expanded(
-                child: Container(
-                  height: 100,
-                  color: Colors.amber.withOpacity(value),
-                  child: const Center(child: Text('Amber')),
-                ),
-              )
-            ],
-          )
+                Expanded(
+                  child: Container(
+                    height: 100,
+                    color: Colors.amber.withOpacity(sliderProvider.value),
+                    child: const Center(child: Text('Amber')),
+                  ),
+                )
+              ],
+            );
+          }),
         ],
       ),
     );
   }
 }
+
+// In above code you can use value.value instead of sliderProvider.value as well
