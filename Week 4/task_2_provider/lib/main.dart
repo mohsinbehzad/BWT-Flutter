@@ -4,6 +4,7 @@ import 'package:task_2_provider/Screens/count_example.dart';
 import 'package:task_2_provider/Screens/favourite_example.dart';
 import 'package:task_2_provider/Screens/slider_example.dart';
 import 'package:task_2_provider/provider/count_provider.dart';
+import 'package:task_2_provider/provider/favourite_provider.dart';
 import 'package:task_2_provider/provider/slider_provider.dart';
 
 void main() {
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => CountProvider()),
-        ChangeNotifierProvider(create: (_) => SliderProvider())
+        ChangeNotifierProvider(create: (_) => SliderProvider()),
+        ChangeNotifierProvider(create: (_) => FavouriteProvider())
       ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
