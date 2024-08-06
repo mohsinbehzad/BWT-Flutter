@@ -10,22 +10,22 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: const Center(
-            child: Text('Custom Widgets'),
+            child: Text('Custom Widgets', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w300, fontSize: 30),),
           ),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(
+              Container(
                 height: 60,
                 width: 150,
                 child: RoundedButton(
                   buttonName: 'Play',
-                  textStyle: const TextStyle(fontSize: 25),
+                  textStyle: const TextStyle(fontSize: 20),
                   icon: const Icon(
                     Icons.play_arrow,
-                    size: 40,
+                    size: 30,
                   ),
                   callBack: () {
                     print('Loading...');
@@ -40,10 +40,10 @@ class HomeScreen extends StatelessWidget {
                 width: 150,
                 child: RoundedButton(
                   buttonName: 'Quit',
-                  textStyle: const TextStyle(fontSize: 25),
+                  textStyle: const TextStyle(fontSize: 20),
                   icon: const Icon(
                     Icons.close,
-                    size: 40,
+                    size: 30,
                   ),
                   bgColor: Colors.green,
                   callBack: () {

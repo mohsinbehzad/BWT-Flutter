@@ -1,11 +1,8 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class RoundedButton extends StatelessWidget {
-  const RoundedButton(
-      {super.key,
-      required this.buttonName,
+  RoundedButton(
+      {required this.buttonName,
       this.icon,
       this.bgColor = Colors.orange,
       this.textStyle,
@@ -27,20 +24,24 @@ class RoundedButton extends StatelessWidget {
           backgroundColor: bgColor,
           shadowColor: bgColor,
           shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(21)),
+            borderRadius: BorderRadius.all(Radius.circular(25)),
           )),
       child: icon != null
-          ? Row(
-              children: [
-                icon!,
-                const SizedBox(
-                  width: 11,
-                ),
-                Text(
-                  buttonName,
-                  style: textStyle,
-                )
-              ],
+          ? Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  icon!,
+                  const SizedBox(
+                    width: 11,
+                  ),
+                  Text(
+                    buttonName,
+                    style: textStyle,
+                  )
+                ],
+              ),
             )
           : Text(
               buttonName,
