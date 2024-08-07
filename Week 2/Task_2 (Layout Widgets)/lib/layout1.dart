@@ -12,7 +12,7 @@ class Layout1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.blue,
-          title: const Text('Single Scroll View'),
+          title: const Text('Sized Box and Spacer'),
           actions: [
             Padding(
               padding: const EdgeInsets.all(10.0),
