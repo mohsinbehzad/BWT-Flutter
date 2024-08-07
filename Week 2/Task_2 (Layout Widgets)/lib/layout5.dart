@@ -1,6 +1,7 @@
 // padding
 
 import 'package:flutter/material.dart';
+import 'package:layout_widgets/layout6.dart';
 
 class Layout5 extends StatelessWidget {
   const Layout5({super.key});
@@ -10,6 +11,19 @@ class Layout5 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
+        title: const Text('Padding'),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: InkWell(
+              child: const Icon(Icons.navigate_next),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Layout6()));
+              },
+            ),
+          )
+        ],
       ),
       body: Column(
         children: [

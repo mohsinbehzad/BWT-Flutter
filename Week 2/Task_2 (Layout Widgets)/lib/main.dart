@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:layout_widgets/layout1.dart';
-import 'package:layout_widgets/layout2.dart';
-import 'package:layout_widgets/layout3.dart';
-import 'package:layout_widgets/layout4.dart';
-import 'package:layout_widgets/layout5.dart';
-import 'package:layout_widgets/layout6.dart';
-import 'package:layout_widgets/singleScrollView.dart';
+
+import 'package:layout_widgets/single_scroll_view.dart';
 
 void main() {
   runApp(const MyApp());

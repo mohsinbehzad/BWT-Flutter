@@ -1,3 +1,5 @@
+// Transform
+
 import 'package:flutter/material.dart';
 
 class Layout6 extends StatelessWidget {
@@ -8,6 +10,7 @@ class Layout6 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
+        title: const Center(child: Text('Transform')),
       ),
       body: Center(
         child: Transform(
