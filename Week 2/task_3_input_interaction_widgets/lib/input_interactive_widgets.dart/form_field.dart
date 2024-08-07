@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task_3_input_interaction_widgets/input_widgets.dart/keyboard_listeners.dart';
+import 'package:task_3_input_interaction_widgets/input_interactive_widgets.dart/absorb_pointer.dart';
 
 final _formKey = GlobalKey<FormState>();
 
@@ -16,7 +16,7 @@ class InputWidgets2 extends StatelessWidget {
           InkWell(
               child: const Icon(Icons.widgets_outlined),
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const InputWidgets3()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const InteractiveWidgets()));
               },
           ),
         ],
