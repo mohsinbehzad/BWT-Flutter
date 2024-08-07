@@ -1,7 +1,7 @@
 // Autocomplete
 
 import 'package:flutter/material.dart';
-import 'package:task_3_input_interaction_widgets/input_widgets.dart/form.dart';
+import 'package:task_3_input_interaction_widgets/input_widgets.dart/form_field.dart';
 
 class InputWidgets extends StatelessWidget {
   const InputWidgets({super.key});
@@ -12,6 +12,7 @@ class InputWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Center(child: Text('AutoComplete')),
         backgroundColor: Colors.blue,
         actions: <Widget> [
           GestureDetector(
