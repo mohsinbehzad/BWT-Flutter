@@ -12,13 +12,15 @@ class InteractiveWidgets extends StatelessWidget {
         backgroundColor: Colors.amber,
         actions: [
           InkWell(
-              child: const Icon(Icons.widgets_outlined),
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Icon(Icons.widgets_outlined),
+              ),
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const InteractiveWidgets2()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => InteractiveWidgets2()));
               },
           ),
         ],
-
       ),
       body: Center(
         child: Stack(
