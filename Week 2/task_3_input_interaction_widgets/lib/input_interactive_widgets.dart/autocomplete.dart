@@ -6,7 +6,7 @@ import 'package:task_3_input_interaction_widgets/input_interactive_widgets.dart/
 class InputWidgets extends StatelessWidget {
   const InputWidgets({super.key});
 
-  static const List<String> listItems = <String>['Peas', 'Potatoe', 'Tomatoe'];
+  static const List<String> listItems = <String>['peas', 'potatoe', 'tomatoe', 'apple', 'mangoe', 'banana'];
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class InputWidgets extends StatelessWidget {
         actions: <Widget> [
           GestureDetector(
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => InputWidgets2()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const InputWidgets2()));
             },
             child: const Padding(
               padding: EdgeInsets.all(8.0),
