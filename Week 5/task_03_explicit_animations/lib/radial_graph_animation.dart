@@ -37,7 +37,7 @@ class _RadialProgressAnimationState extends State<RadialProgressAnimation>
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: const Text('Explicit Animation'),
+        title: const Text('Radial Progress Animation'),
         actions: [
           GestureDetector(
               onTap: () {
