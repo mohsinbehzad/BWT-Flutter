@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "950599793902",
+    "project_id": "bytewise-task01-auth",
+    "storage_bucket": "bytewise-task01-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950599793902:android:af312ec2c5e185d6d187ff",
+        "android_client_info": {
+          "package_name": "com.example.auth_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgAGb7a9zXzTmLmhw70pmc1Gq9BdZS_QI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
