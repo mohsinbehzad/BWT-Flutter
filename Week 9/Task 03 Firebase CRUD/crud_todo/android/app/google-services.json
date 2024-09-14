@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "20709382603",
+    "project_id": "crud-bytewise",
+    "storage_bucket": "crud-bytewise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20709382603:android:cd98f257e97453d68d7e4e",
+        "android_client_info": {
+          "package_name": "com.example.crud_todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6BI0UfF6oAeKoa5T8cB5b1B2QDPIBrl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
