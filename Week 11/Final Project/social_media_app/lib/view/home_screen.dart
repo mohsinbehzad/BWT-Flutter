@@ -6,7 +6,6 @@ import 'package:social_media_app/components/drawer.dart';
 import 'package:social_media_app/components/vibes_connect_post.dart';
 import 'package:social_media_app/components/text_field.dart';
 import 'package:social_media_app/helper/helper_methods.dart';
-import 'package:social_media_app/view/login_screen.dart';
 import 'package:social_media_app/view/profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {

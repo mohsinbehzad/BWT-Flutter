@@ -12,7 +12,6 @@ class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _HomeViewState createState() => _HomeViewState();
 }
 
@@ -119,10 +118,9 @@ class _HomeViewState extends State<HomeView> {
             child: Text(
               title,
               style: const TextStyle(
-                
                 fontWeight: FontWeight.w600,
                 fontSize: 18,
-                color: Colors.white,
+                color: Colors.black,
               ),
             ),
           ),
