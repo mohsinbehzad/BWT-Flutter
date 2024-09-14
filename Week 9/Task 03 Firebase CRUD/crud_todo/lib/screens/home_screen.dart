@@ -53,7 +53,9 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Notes'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          openNoteBox(null);
+        },
         child: const Icon(Icons.add),
       ),
       body: StreamBuilder<QuerySnapshot>(
